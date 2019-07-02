@@ -1,3 +1,8 @@
-1.Intel claims that there is a 17% - 22% improvement when the march and mtune flags are set properly, 
-and not just generic,x86-64 or nocona is used.
-2.
+1. GCC  have flags that allow you to tell them what kind of hardware you have. They are “-march” and “-mtune”.
+   (Ref->https://lemire.me/blog/2018/07/25/it-is-more-complicated-than-i-thought-mtune-march-in-gcc/)
+
+2. If no flags are specified explicitly, GCC will usually automatically apply -mtune=generic -march=x86-64.
+   Intel claims that there is a 17% - 22% improvement when the march and mtune flags are set properly, 
+   and not just generic,x86-64 or nocona is used.
+   (Ref->https://arnon.dk/which-architecture-should-i-compile-for/)
+
